@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Sign-in Page</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: red;
+            margin-top: 30px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #333;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: red;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button a {
+            float: center;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        button:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: red;
+        }
+        .remember {
+            font-size: 15px;
+            background-color: #eee;
+            border: 1px solid #fff;
+        }
+
+        .netflix{
+            display: block;
+        }
+
+        .netflix img{
+            float: left;
+            margin-top: -40px;
+            width: 42%;
+            margin-left: -35px;
+
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="netflix">
+            <img src="netflixori.png" alt="Netflix">
+            <br> <br> <br>
+            <h2>Sign In</h2>
+        </div>
+        <br> 
+        <form>
+            <br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <a href="reset.php"
+            class="forgot-pass">Forgot Password</a> 
+
+            <input type="checkbox" id="remember" name="remember" checked="checked">
+            Remember me <br> <br>
+
+            <button type="submit"> 
+                <a href="first class.html">Log In</a> 
+            </button>
+        </form>
+        <a href="signup.html">You are new here. Sign Up</a>
+    </div>
+</body>
+</html>
